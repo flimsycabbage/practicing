@@ -7,7 +7,7 @@ body, html {
 }
 
 .background-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('3434.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/3434.jpg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,4 +23,18 @@ h1 {
     text-shadow: 2px 2px 20px rgba(0,0,0,0.7);
     letter-spacing: 2px;
     text-transform: uppercase;
+    transition: font-size 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
 }
